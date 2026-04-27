@@ -105,3 +105,5 @@ if __name__ == "__main__":
     foprogram()
     
 
+# változás megnézése mi történik, ha feltöltöm
+
