@@ -66,7 +66,7 @@ class Henger(Test):
     def terfogat(self):
         return math.pi * self.r * self.r * self.m
 
-def bekер_szamot(szoveg):
+def beker_szamot(szoveg):
     while True:
         try:
             ertek = float(input(szoveg))
@@ -92,22 +92,22 @@ def menu():
         valasztas = input("Választásod: ")
 
         if valasztas == "1":
-            a = bekер_szamot("Add meg az oldalt: ")
+            a = beker_szamot("Add meg az oldalt: ")
             Kocka(a).info()
 
         elif valasztas == "2":
-            a = bekер_szamot("Add meg az 'a' oldalt: ")
-            b = bekер_szamot("Add meg a 'b' oldalt: ")
-            c = bekер_szamot("Add meg a 'c' oldalt: ")
+            a = beker_szamot("Add meg az 'a' oldalt: ")
+            b = beker_szamot("Add meg a 'b' oldalt: ")
+            c = beker_szamot("Add meg a 'c' oldalt: ")
             Teglatest(a, b, c).info()
 
         elif valasztas == "3":
-            r = bekер_szamot("Add meg a sugarat: ")
+            r = beker_szamot("Add meg a sugarat: ")
             Gomb(r).info()
 
         elif valasztas == "4":
-            r = bekер_szamot("Add meg a sugarat: ")
-            m = bekер_szamot("Add meg a magasságot: ")
+            r = beker_szamot("Add meg a sugarat: ")
+            m = beker_szamot("Add meg a magasságot: ")
             Henger(r, m).info()
 
         elif valasztas == "0":
@@ -118,3 +118,4 @@ def menu():
             print("Érvénytelen választás!")
 
 menu()
+
