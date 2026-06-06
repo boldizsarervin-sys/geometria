@@ -6,7 +6,7 @@ print("Üdvözöl a Geometria számológép!")
 print("-------------------------------")
 
 # ----- NÉGYZET -----
-oldal =  5
+oldal =  float(input("Add meg a négyzet oldalának hosszát: "))
 terulet = oldal * oldal
 kerulet = 4 * oldal
 
@@ -14,3 +14,4 @@ print("Négyzet:")
 print("Oldal hossza:", oldal)
 print("Terület:", terulet)
 print("Kerület:", kerulet)
+
