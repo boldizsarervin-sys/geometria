@@ -56,18 +56,33 @@ def menu():
         valasztas = input("Választásod: ")
 
         if valasztas == "1":
-            oldal = float(input("Add meg az oldalt: "))
+            while True:
+                try:
+                    oldal = float(input("Add meg az oldalt: "))
+                    break
+                except ValueError:
+                    print("Hibás bemenet! Számot kell beírni.")
             n = Negyzet(oldal)
             n.info()
 
         elif valasztas == "2":
-            a = float(input("Add meg az 'a' oldalt: "))
-            b = float(input("Add meg a 'b' oldalt: "))
+            while True:
+                try:
+                    a = float(input("Add meg az 'a' oldalt: "))
+                    b = float(input("Add meg a 'b' oldalt: "))
+                    break
+                except ValueError:
+                    print("Hibás bemenet! Számot kell beírni.")
             t = Teglalap(a, b)
             t.info()
 
         elif valasztas == "3":
-            r = float(input("Add meg a sugarat: "))
+            while True:
+                try:
+                    r = float(input("Add meg a sugarat: "))
+                    break
+                except ValueError:
+                    print("Hibás bemenet! Számot kell beírni.")
             k = Kor(r)
             k.info()
 
