@@ -12,8 +12,8 @@ def negyzet():
     terulet = oldal * oldal
     kerület = 4 * oldal
     print("\n")
-    print(f"Terület: {terulet:.2f}")
-    print(f"Kerület: {kerület:.2f}")
+    print(f"Terület: {terulet:.6g}")
+    print(f"Kerület: {kerület:.6g}")
 
 # ----- TÉGLALAP -----
 def teglalap():
@@ -23,9 +23,9 @@ def teglalap():
     terulet = a * b
     kerület = 2 * (a + b)
     print("\n")
-    print(f"Terület: {terulet:.2f}")
-    print(f"Kerület: {kerület:.2f}")
-    
+    print(f"Terület: {terulet:.6g}")
+    print(f"Kerület: {kerület:.6g}")
+
 # ----- KÖR -----
 def kor():
     print("\n")
@@ -33,8 +33,8 @@ def kor():
     terulet = math.pi * r * r
     kerület = 2 * math.pi * r
     print("\n")
-    print(f"Terület: {terulet:.2f}")
-    print(f"Kerület: {kerület:.2f}")
+    print(f"Terület: {terulet:.6g}")
+    print(f"Kerület: {kerület:.6g}")
 
     # ----- FŐPROGRAM -----
 print("Üdvözöl a Geometria számológép!")
