@@ -15,3 +15,12 @@ print("Oldal hossza:", oldal)
 print("Terület:", terulet)
 print("Kerület:", kerulet)
 
+# ----- TÉGLALAP -----
+a = float(input("Add meg a téglalap 'a' oldalát: "))
+b = float(input("Add meg a téglalap 'b' oldalát: "))
+terulet = a * b
+kerulet = 2 * (a + b)
+
+print("Téglalap:")
+print("Terület:", terulet)
+print("Kerület:", kerulet)
