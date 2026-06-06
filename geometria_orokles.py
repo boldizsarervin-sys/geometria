@@ -8,8 +8,13 @@ class Sikdom:
         return 0
 
     def info(self):
-        print(f"Terület: {self.terulet():.2f}")
-        print(f"Kerület: {self.kerulet():.2f}")
+        eredmeny = f"Terület: {self.terulet():.2f}\nKerület: {self.kerulet():.2f}"
+        print(eredmeny)
+        with open("eredmenyek.txt", "a", encoding="utf-8") as f:
+            f.write(f"{self.__class__.__name__}\n")
+            f.write(eredmeny + "\n")
+            f.write("-" * 20 + "\n")
+
 
 class Negyzet(Sikdom):
     def __init__(self, oldal):
