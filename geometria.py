@@ -5,3 +5,12 @@
 print("Üdvözöl a Geometria számológép!")
 print("-------------------------------")
 
+# ----- NÉGYZET -----
+oldal =  5
+terulet = oldal * oldal
+kerulet = 4 * oldal
+
+print("Négyzet:")
+print("Oldal hossza:", oldal)
+print("Terület:", terulet)
+print("Kerület:", kerulet)
